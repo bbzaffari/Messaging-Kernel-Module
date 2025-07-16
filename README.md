@@ -102,24 +102,3 @@ This project is an educational exercise aimed at deepening understanding of:
 * Character device drivers.
 * Process communication.
 * Memory and concurrency management at kernel level.
-
-## Limitations and Ideas for Expansion
-
-### Current Limitations
-
-* **PID-based Identification** — Only one registration per PID; no multithreaded support; risk with PID reuse.
-* **No File Descriptor Context** — Lacks per-connection tracking, limits flexibility.
-* **Simple Error Handling** — Mainly logs to kernel, no rich user-space error feedback.
-* **Fixed Load-Time Configuration** — No runtime parameter adjustment.
-* **Limited Metadata** — Messages have no timestamps, priorities, or headers.
-* **No Async Notification** — Relies on polling; no `poll()`, signals, or epoll integration.
-
-### Ideas for Expansion
-
-* Use `struct file` or inodes to track connections, allowing multiple registrations per process and better cleanup.
-* Add `poll()`, `select()`, or `fasync` support for asynchronous notifications.
-* Extend messages with metadata (timestamps, priorities, etc.).
-* Add sysfs or procfs interfaces for runtime configuration.
-* Improve user-space error reporting with ioctl interfaces or structured codes.
-* Add access control or namespace integration for security.
-* Develop unit tests, stress tests, and fault injection mechanisms.
