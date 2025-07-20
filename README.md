@@ -94,6 +94,11 @@ Scripts are included to:
 └── tp2.pdf         # Project description and assignment details
 ```
 
+## How to build it with buildroot
+...  
+## How to run it with QEMU
+... 
+
 ## Final Remarks
 
 This project is an educational exercise aimed at deepening understanding of:
