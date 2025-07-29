@@ -1,6 +1,6 @@
-# Simple Messaging Kernel Module
+# Messaging Kernel Module
 
-This project implements a Linux kernel loadable module (KLM) that provides a basic messaging system between user-space processes, using circular queues managed in kernel space.
+This project implements a Kernel Loadable Module (KLM) that provides a **messaging character driver** between user-space processes, using circular queues managed in kernel space.
 
 It was developed as part of the Operating Systems course (Prof. Sérgio Johann Filho) and cross-compiled with **Buildroot** for use on an embedded Linux environment.
 
